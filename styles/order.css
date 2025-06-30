@@ -1,0 +1,367 @@
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.exchange-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.status-badge-created {
+    background: #ffd700;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.status-badge-awaiting-input {
+    background: #ffa500;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.status-badge-confirming-input {
+    background: #2ecc71;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.status-badge-exchanging {
+    background: #3498db;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.status-badge-confirming-output {
+    background: #9b59b6;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.status-badge-success {
+    background: #27ae60;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    color: #718093;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-weight: 500;
+    font-size: 1.1em;
+    word-break: break-all;
+}
+
+.address-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.loading-address {
+    color: #7f8fa6;
+    font-style: italic;
+}
+
+.warning-message {
+    background: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    border: 1px solid #ffeeba;
+}
+
+ .error-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.error-icon {
+    font-size: 4em;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+        
+.error-details {
+    background: #fdecea;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+.info-value {
+    word-break: break-all;
+}
+
+.contact-box {
+    background: #eaf2f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.telegram-link {
+    display: inline-block;
+    background: #0088cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.telegram-link:hover {
+    background: #0077b5;
+}
+
+.auto-refund-note {
+    color: #27ae60;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+.exchange-rate {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2ecc71;
+    margin: 15px 0;
+}
+
+ .qr-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.qr-code {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.address-wrapper {
+    flex-grow: 1;
+}
+
+.confirmation-progress {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #2ecc71;  
+    transition: width 0.3s ease;
+}
+
+.transaction-details {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.explorers-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.explorers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.explorer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background: white;
+    transition: transform 0.2s;
+}
+
+.explorer-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+ .explorer-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.transaction-column {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.transaction-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.transaction-list {
+    margin-top: 15px;
+}
+
+.transaction-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+ .transaction-details {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.pa {
+    text-align: center;
+    margin: 25px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.pi {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.sm {
+    text-align: center;
+    padding: 30px;
+    background: #e8f5e9;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.ci {
+    font-size: 3em;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.td {
+    margin-top: 15px;
+}
+
+.amount-summary {
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.expiration-timer {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.timer-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e67e22;
+    margin-top: 5px;
+}
