@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Failed - Exchange Service</title>
+    <link rel="stylesheet" href="styles/order.css">
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-icon">✕</div>
+        <h1>Transaction Failed</h1>
+        
+        <p>We encountered an error processing your exchange. Please read the information below carefully.</p>
+        
+        <div class="auto-refund-note">
+            ✔️ Any funds sent will be automatically refunded within 30 minutes
+        </div>
+        
+        <div class="error-details">
+            <div class="info-item">
+                <div class="info-label">Order ID</div>
+                <div class="info-value">{{.OrderID}}</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">Error Message</div>
+                <div class="info-value">{{.ErrorMessage}}</div>
+            </div>
+        </div>
+        
+        <div class="contact-box">
+            <h3>Didn't Receive Your Refund?</h3>
+            <p>If you don't see the refund in your wallet within 24 hours, please contact our support team on Telegram with:</p>
+            <ul style="text-align: left; margin-left: 20px;">
+                <li>This Order ID: <strong>{{.OrderID}}</strong></li>
+                <li>Your Refund Address: <strong>Refund address you provided on the initial page</strong></li>
+            </ul>
+            
+            <a href="https://t.me/AlisonsExchangeSupport" class="telegram-link" target="_blank">
+                Contact Support on Telegram
+            </a>
+        </div>
+    </div>
+</body>
+</html>
