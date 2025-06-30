@@ -1,0 +1,102 @@
+{
+    "supportedCryptos": [
+        {
+            "internalAssetID": 1,
+            "coinmarketcapAssetID": 1,
+            "assetName": "Bitcoin",
+            "addressRegex": "^(?:bc1[q|p][a-z0-9]{38,59}|[13][a-km-zA-HJ-NP-Z1-9]{25,34})$",
+			"assetSign": "BTC",
+			"precision": 8,
+			"confirmationsNeeded": 1
+        },
+        {
+            "internalAssetID": 2,
+            "coinmarketcapAssetID": 2,
+            "assetName": "Litecoin",
+            "addressRegex": "^(?:ltc1[q|p][a-z0-9]{38,59}|[LM3][a-km-zA-HJ-NP-Z1-9]{26,33})$",
+			"assetSign": "LTC",
+			"precision": 8,
+			"confirmationsNeeded": 6
+        },
+        {
+            "internalAssetID": 3,
+            "coinmarketcapAssetID": 328,
+            "assetName": "Monero",
+            "addressRegex": "^[48][0-9AB][1-9A-HJ-NP-Za-km-z]{93}$",
+			"assetSign": "XMR",
+			"precision": 12,
+			"confirmationsNeeded": 3
+        },
+		{
+            "internalAssetID": 4,
+            "coinmarketcapAssetID": 1027,
+            "assetName": "Ethereum",
+            "addressRegex": "^0x[a-fA-F0-9]{40}$",
+			"assetSign": "ETH",
+			"precision": 18,
+			"confirmationsNeeded": 12
+        }
+    ],
+    "routes": [
+		{
+			"pair": {"idFrom": 1, "idTo": 2},
+			"fee": 0.01,
+			"minAmount": 0.0001
+		},
+		{
+			"pair": {"idFrom": 1, "idTo": 3},
+			"fee": 0.01,
+			"minAmount": 0.0001
+		},
+		{
+			"pair": {"idFrom": 1, "idTo": 4},
+			"fee": 0.01,
+			"minAmount": 0.0001
+		},
+		{
+			"pair": {"idFrom": 2, "idTo": 1},
+			"fee": 0.01,
+			"minAmount": 0.1
+		},
+		{
+			"pair": {"idFrom": 2, "idTo": 3},
+			"fee": 0.01,
+			"minAmount": 0.1
+		},
+		{
+			"pair": {"idFrom": 2, "idTo": 4},
+			"fee": 0.01,
+			"minAmount": 0.1
+		},
+		{
+			"pair": {"idFrom": 3, "idTo": 1},
+			"fee": 0.01,
+			"minAmount": 0.03
+		},
+		{
+			"pair": {"idFrom": 3, "idTo": 2},
+			"fee": 0.01,
+			"minAmount": 0.03
+		},
+		{
+			"pair": {"idFrom": 3, "idTo": 4},
+			"fee": 0.01,
+			"minAmount": 0.03
+		},
+		{
+			"pair": {"idFrom": 4, "idTo": 1},
+			"fee": 0.01,
+			"minAmount": 0.005
+		},
+		{
+			"pair": {"idFrom": 4, "idTo": 2},
+			"fee": 0.01,
+			"minAmount": 0.005
+		},
+		{
+			"pair": {"idFrom": 4, "idTo": 3},
+			"fee": 0.01,
+			"minAmount": 0.005
+		}
+	]	
+}
