@@ -1,4 +1,4 @@
-module exchangeBackend
+module teProj
 
 go 1.23.0
 
